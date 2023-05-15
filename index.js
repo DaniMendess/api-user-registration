@@ -31,10 +31,9 @@ const MyfirstMiddle = (request, response, next) => {
     next()
 }
 
-
 // ROTAS
 
-app.get('/', (response) => {
+app.get('/', (request,response) => {
     return response.json("Ok 👌")
 })
 
